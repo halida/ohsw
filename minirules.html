@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>One-Hour Skirmish Wargames - One Page Rules</title>
+<style>
+@media print {
+  @page {
+    size: A4;
+    margin: 0.5in;
+  }
+  body {
+    column-count: 2;
+    column-gap: 0.3in;
+  }
+  h1 {
+    column-span: all;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 0;
+  }
+  h2 {
+    font-size: 14px;
+    margin-top: 8px;
+    margin-bottom: 4px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 12px;
+  }
+  td, th {
+    padding: 2px 4px;
+  }
+  hr {
+    column-span: all;
+    border: none;
+    border-top: 1px solid #ccc;
+  }
+}
+body {
+  font-family: "Microsoft YaHei", "SimHei", sans-serif;
+  column-count: 2;
+  column-gap: 0.3in;
+  margin: 0.5in;
+}
+h1 {
+  column-span: all;
+  font-size: 18px;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+h2 {
+  font-size: 14px;
+  margin-top: 8px;
+  margin-bottom: 4px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+}
+td, th {
+  padding: 2px 4px;
+  border-bottom: 1px solid #eee;
+}
+hr {
+  column-span: all;
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 8px 0;
+}
+p {
+  margin: 4px 0;
+  font-size: 12px;
+}
+code, pre {
+  font-family: monospace;
+  font-size: 11px;
+}
+</style>
+</head>
+<body>
+<h1>One-Hour Skirmish Wargames — 一分钟规则 (一页打印版)</h1>
+
+<h2>牌值</h2>
+<p>A=1, J=11, Q=12, K=13</p>
+<p><strong>同点数比花色：黑桃 &gt; 红桃 &gt; 方块 &gt; 梅花</p>
+<p>完全相同牌（同点同花）→ 双方各重抽一张</p>
+
+<h2>回合流程</h2>
+<pre>
+1. 比先手 → 各抽一张，大牌先走
+2. 交替玩家阶段 → 直到有人翻出 Joker，回合立即结束
+3. 士气检定 → 双方同时检查
+4. 伤亡检定 → 倒地模型抽牌，红牌=阵亡移除，黑牌=复活站起来
+5. 开始下一回合
+</pre>
+
+<h2>玩家阶段</h2>
+<p>- 翻一张牌 = 获得 <strong>行动点数 AP = 牌面值</strong></p>
+<p>- 激活模型：移动 1 次 = 1AP，移动 2 次 = 3AP，移动 3 次 = 5AP</p>
+<p>- 射击 1AP，<strong>射击后不能移动</strong>，移动后可以射击。每阶段只能射击一次，激活一次。</p>
+
+<h2>移动</h2>
+<pre>
+步兵 ................ 6 英寸
+骑兵/武士 .......... 9 英寸
+轮式车辆 ..... 公路 24 英寸 / 越野 6 英寸
+履带车辆 ............ 12 英寸
+</pre>
+
+<h2>近战</h2>
+<p>- 模型移动到<strong>接触敌人</strong> = 立即近战</p>
+<p>- <strong>攻击者抽 2 留大，防御者抽 1</strong> → 输直接阵亡，不是击倒</p>
+
+<h2>射击</h2>
+<p>- 攻 1 张 vs 防 1 张 → 攻赢 = 目标倒地</p>
+<p>- 多发武器依次射击，目标倒地后<strong>剩余子弹可以转火 3 英寸</strong>内任意目标，不需要视线</p>
+<p>- 防御抽牌加成（抽多张留最大）：<code>软掩护+1 硬掩护+2 碉堡+3</code></p>
+<p><small>软掩护=植被灌木，硬掩护=碎石大树墙壁，碉堡=混凝土工事</small></p>
+
+<h2>常见武器参数</h2>
+<table>
+  <tr><th>武器</th><th>射程</th><th>发数</th><th>穿甲</th></tr>
+  <tr><td>手枪</td><td>6"</td><td>1</td><td>-</td></tr>
+  <tr><td>滑膛枪/步枪</td><td>18"/∞</td><td>1</td><td>-</td></tr>
+  <tr><td>冲锋枪/突击步枪</td><td colspan="3">∞/18" 1发 <strong>或</strong> 18"/6" 2发</td></tr>
+  <tr><td>轻机枪</td><td>∞</td><td>2</td><td>-</td></tr>
+  <tr><td>重机枪</td><td>∞</td><td>3</td><td>1</td></tr>
+  <tr><td>手榴弹</td><td>9"</td><td>1</td><td>1</td></tr>
+  <tr><td>反坦克步枪</td><td>18"</td><td>1</td><td>1-2</td></tr>
+  <tr><td>巴祖卡/铁拳/PIAT</td><td>18"</td><td>1</td><td>4</td></tr>
+</table>
+
+<h2>车辆装甲 (前/侧/后)</h2>
+<table>
+  <tr><th>车辆</th><th>装甲</th></tr>
+  <tr><td>卡车/吉普</td><td>0/0/0</td></tr>
+  <tr><td>装甲车/半履带</td><td>1/1/1</td></tr>
+  <tr><td>轻坦克</td><td>2/1/1</td></tr>
+  <tr><td>中坦克</td><td>4/2/1</td></tr>
+  <tr><td>重坦克</td><td>6/3/2</td></tr>
+</table>
+
+<h2>射击车辆流程</h2>
+<pre>
+1. 各抽一张 判断是否命中
+2. 命中再各抽一张：
+   攻击者 + 武器穿甲值
+   防御者 + 对应装甲 + 车辆士气
+3. 差值 = 累计伤害
+4. 乘员检定：抽一张，牌 ≤ 累计伤害 → 弃车，击毁
+</pre>
+<p>- 步兵贴脸近战攻击车辆 → 穿甲 = 1</p>
+
+<h2>特殊能力</h2>
+<table>
+  <tr><th>能力</th><th>效果</th></tr>
+  <tr><td>指挥官(X)</td><td>士气/射击/近战 +X 张</td></tr>
+  <tr><td>神射手(X)</td><td>射击 +X 张</td></tr>
+  <tr><td>猛士(X)</td><td>近战 攻防 +X 张</td></tr>
+  <tr><td>强壮(X)</td><td>被射击 +X 张防御</td></tr>
+  <tr><td>侦察兵(X)</td><td>掩护防御 +X 张</td></tr>
+  <tr><td>鼓舞</td><td>每回合重抽一次士气牌</td></tr>
+  <tr><td>幸运</td><td>被击倒后只有红桃算阵亡</td></tr>
+  <tr><td>快速</td><td>移动 +3 英寸</td></tr>
+</table>
+
+<h2>士气崩溃 (回合结束)</h2>
+<p>- <code>(抽牌 + 军队士气) > 累计阵亡</code> → 通过检定，继续</p>
+<p>- <code>(抽牌 + 军队士气) ≤ 累计阵亡</code> → 军队崩溃，你输</p>
+<p>- 指挥官可以多抽牌，选最好的一张</p>
+
+<h2>胜利条件</h2>
+<p>- 对方军队先崩溃</p>
+<p>- 完成剧本特定目标</p>
+
+<hr>
+
+<p style="text-align: center; font-style: italic;">
+一般双方 40-60 分，一小时就能打完一局
+</p>
+
+</body>
+</html>
